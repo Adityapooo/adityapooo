@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR </title>
+    <script language="JavaScript">
+        document.write("Dimodifikasi Terakhir Pada " + document.lastModified)
+
+        function tambah() {
+            var bil1 = parseFloat(document.kalkulator.bil1.value);
+            var bil2 = parseFloat(document.kalkulator.bil2.value);
+            var hasil = bil1 + bil2;
+            document.kalkulator.hasil.value = hasil;
+        }
+
+        function kurang() {
+            var bil1 = parseFloat(document.kalkulator.bil1.value);
+            var bil2 = parseFloat(document.kalkulator.bil2.value);
+            var hasil = bil1 - bil2;
+            document.kalkulator.hasil.value = hasil;
+        }
+
+        function kali() {
+            var bil1 = parseFloat(document.kalkulator.bil1.value);
+            var bil2 = parseFloat(document.kalkulator.bil2.value);
+            var hasil = bil1 * bil2;
+            document.kalkulator.hasil.value = hasil;
+        }
+
+        function bagi() {
+            var bil1 = parseFloat(document.kalkulator.bil1.value);
+            var bil2 = parseFloat(document.kalkulator.bil2.value);
+            var hasil = bil1 / bil2;
+            document.kalkulator.hasil.value = hasil;
+        }
+
+        function resetkalkulator() {
+            document.kalkulator.reset();
+        }
+    </script>
+</head>
+<STYLE type="text/css">
+    BODY { background-color : rgb(255, 166, 0)}
+</STYLE>
+<body>
+    <h1>PROGRAM KALKULATOR </h1>
+    <form action="" name="kalkulator">
+        Bilangan pertama :
+        <input type="text" name="bil1" id="">
+        <br> <br>
+        Bilangan kedua :
+        <input type="text" name="bil2" id="">
+        <br> <br>
+        Hasil :
+        <input type="text" name="hasil" id="">
+        <br> <br>
+        <input type="button" value="Tambah (+)" onclick="tambah()">
+        <input type="button" value="Kurang (-)" onclick="kurang()">
+        <input type="button" value="Kali (x)" onclick="kali()">
+        <input type="button" value="Bagi (/)" onclick="bagi()">
+        <input type="button" value="Reset" onclick="resetkalkulator()">
+    </form>
+</body>
+</html>

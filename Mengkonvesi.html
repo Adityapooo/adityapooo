@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai</title>
+</head>
+<STYLE type="text/css">
+    BODY { background-color : rgb(0, 255, 200)}
+</STYLE>
+<script language="JavaScript">
+    document.write("Dimodifikasi Terakhir Pada "+document.lastModified)
+    function konversi(){
+            var x = document.kirim.angka.value
+            if(x<=40)
+            document.kirim.huruf. value = "E"
+            else if (41<=x && 55>=x)
+            document.kirim.huruf. value = "D"
+            else if (56<=x && 60>=x)
+            document.kirim.huruf. value = "C"
+            else if (61<=x && 65>=x)
+            document.kirim.huruf. value = "BC"
+            else if (66<=x && 70>=x)
+            document.kirim.huruf. value = "B"
+            else if (71<=x && 80>=x)
+            document.kirim.huruf. value = "AB"
+            else if (81<=x && 100>=x)
+            document.kirim.huruf. value = "A"
+            else
+            window.alert("Kategori Tidak Ada!")
+        }
+</script>
+<body>
+    <h1> ini prorogram Konversi Nilai dari angka ke huruf</h1>
+    <form name="kirim">
+        <p>Masukkan angka : <input type="text" name="angka" size="20" value="0"></p>
+        <p>Nilai Huruf : <input type="text" name="huruf" size="20" value="Kosong"></p>
+        <p><input type="button" name="btn1" value="Convert" onclick=konversi()></p>
+    </form>
+</body>
+</html>
